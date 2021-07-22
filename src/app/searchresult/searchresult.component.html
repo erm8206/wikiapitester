@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Word Count</th>
+        <th scope="col">Snippet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let dataResult of pages">
+        <th>{{dataResult.title}}</th>
+        <td>{{dataResult.wordcount}}</td>
+        <td>{{dataResult.snippet}}</td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>

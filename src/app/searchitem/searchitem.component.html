@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 container-search">
+            <div class="form-group">
+                <form (submit) = "onSearch($event)">
+                    <input (keydown.enter)="onSearch($event)" type="text" class="form-control" id="search" aria-describedby="search" placeholder="Search Now">
+                </form>
+                
+              </div>
+        </div>
+        <div class="col-md-12">
+            <app-searchresult [pages] = "result"></app-searchresult>
+        </div>
+    </div>
+ 
+</div>
